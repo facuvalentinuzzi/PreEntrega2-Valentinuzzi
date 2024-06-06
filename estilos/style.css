@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgba(99, 194, 200, 0.25);
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 2fr 5fr;
+    padding-bottom: 1%;
+}
+.logo {
+    margin-left: 5%;
+}
+#logo-ateneo {
+    border-radius: 50%;
+}
+.nombre-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.navbar-bs {
+    display: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 10%;
+    justify-content: space-between;
+    font-size: medium;
+}
+nav ul li {
+margin-right: 5%;
+}
+body {
+    background-image: url(../images/fondo-ateneo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer {
+    margin-top: 1%;
+}
+footer ul {
+    list-style: none;
+    background-color: rgba(28, 100, 138, 0.75);
+    width: 100%;
+    padding: 0.5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a {
+    color: rgb(2, 0, 40);
+}
+footer ul li a {
+    color: lightskyblue;
+}
+a:hover{
+    color: violet;
+}
+.cuerpo-index {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+#introduccion {
+    grid-column: span 2;
+    justify-content: center;
+    text-align: justify;
+    padding: 0% 3%;
+}
+.carousel{
+    margin: 0% 5% ;
+    }
+.carousel-inner {
+    height: 45vw;
+    width: 45vw;
+}
+article h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+.article-sobrenos {
+    text-align: justify;
+    margin: 0 6.5%;
+}
+.info-moda-circular {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: space-between;
+}
+.video-moda-circular{
+    width: 90%;
+}
+.podcast-moda-circular {
+    grid-column: span 2;
+    width: 90%;
+}
+main {
+    background-color: rgba(99, 194, 200, 0.25);
+}
+.catalogo {
+    display: flex;
+}
+.card {
+    margin: 0.5%;
+    background-color: rgba(34, 193, 207, 0.76);
+}
+.card-img-top {
+    width: 15vw;
+    height: 15vw;
+}
+.main-circulaconnos {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section-circulaconnos {
+    margin: 3%;
+    padding: 2%;
+    background-color: rgba(28, 100, 138, 0.75);
+    border-radius: 5%;
+}
+.form {
+    margin: 4vw 0vw;
+    text-align: center;
+}
+.parrafo-form {
+    text-align: center;
+}
+.mapa-ateneo {
+    border-radius: 5%;
+}
+.main-colab {
+    display: flex;
+}
+.section-colab {
+    text-align: justify;
+    margin: 0% 5%;
+}
+@media only screen and (max-width: 768px) {
+    .nombre-header {
+        display: none;
+    }
+    header {
+        grid-template-columns: 1fr 4fr;
+    }
+    nav ul {
+        margin: 0%;
+        padding: 0% 5%;
+        font-size: xx-small;
+    }
+    .cuerpo-index {
+        padding-top: 10%;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: 1fr;
+    }
+        #introduccion {
+        grid-column: 1/2;
+        text-align: justify;
+    }
+    .carousel-inner {
+        width: 100%;
+        height: auto ;
+        object-fit: contain;
+    }
+    .carousel {
+        padding: 0%;
+        margin: 0%;
+    }
+    .info-moda-circular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-moda-circular {
+        margin: 2%;
+    }
+}
