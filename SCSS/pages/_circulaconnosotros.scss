@@ -1,0 +1,21 @@
+.main-circulaconnos {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section-circulaconnos {
+    margin: 3%;
+    padding: 2%;
+    background-color: rgba(28, 100, 138, 0.75);
+    border-radius: 5%;
+}
+.form {
+    margin: 4vw 0vw;
+    text-align: center;
+}
+.parrafo-form {
+    text-align: center;
+}
+.mapa-ateneo {
+    border-radius: 5%;
+}

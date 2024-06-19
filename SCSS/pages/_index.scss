@@ -1,0 +1,20 @@
+.cuerpo-index {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+#introduccion {
+    grid-column: span 2;
+    justify-content: center;
+    text-align: justify;
+    padding: 0% 3%;
+}
+.carousel{
+    margin: 0% 5% ;
+    }
+.carousel-inner {
+    height: 45vw;
+    width: 45vw;
+}
