@@ -51,6 +51,9 @@ header .logo #logo-ateneo {
   border-radius: 50%;
 }
 header .nombre-header {
+  color: rgb(2, 0, 40);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,6 +126,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 @media only screen and (max-width: 480px) {
