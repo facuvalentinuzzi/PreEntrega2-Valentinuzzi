@@ -1,7 +1,21 @@
 .main-colab {
     display: flex;
+    flex-direction: row;
+    .section-colab {
+        text-align: justify;
+        margin: 0% 3%;
+        .article-colab {
+            background-color: rgba(28, 100, 138, 0.5);
+            border-radius: 5%;
+            padding: 5%;
+        }
+    }
 }
-.section-colab {
-    text-align: justify;
-    margin: 0% 5%;
+@media only screen and (max-width: 768px) {
+    .article-colab {
+        background-image: url(../images/emunah-rangers-jpeg);
+    }
+        .emunahndo {
+        display: none;
+    }
 }

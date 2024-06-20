@@ -4,17 +4,38 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-}
-#introduccion {
-    grid-column: span 2;
-    justify-content: center;
-    text-align: justify;
-    padding: 0% 3%;
+    #introduccion {
+        grid-column: span 2;
+        justify-content: center;
+        text-align: justify;
+        padding: 0% 3%;
+    }
 }
 .carousel{
     margin: 0% 5% ;
+    .carousel-inner {
+        height: 45vw;
+        width: 45vw;
     }
-.carousel-inner {
-    height: 45vw;
-    width: 45vw;
+}
+@media only screen and (max-width: 768px) {
+    .cuerpo-index {
+        padding-top: 10%;
+        display: grid;
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: 1fr;
+        #introduccion {
+            grid-column: 1/2;
+            text-align: justify;
+        }
+        .carousel {
+            padding: 0%;
+            margin: 0%;
+            .carousel-inner {
+                width: 100%;
+                height: auto ;
+                object-fit: contain;
+            }
+        }
+    }
 }

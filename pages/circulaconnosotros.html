@@ -6,6 +6,8 @@
     
     <!--Titulo de pestaña-->
     <title>Circulá con nosotros ♻️</title>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--CSS-->
@@ -45,7 +47,7 @@
             </p>
         </section>
         <section id="formulario-retiro" class="formulario section-circulaconnos">
-            <p class="parrafo-form">Por favor, completa el siguiente formulario con tus datos y tu direccion de recogida y nosotros pasaremos a buscar tus prendas que quieras que circulen con nosotros</p>
+            <p class="parrafo-form">Por favor, completa el siguiente formulario con tus datos y tu direccion de recogida y nosotros pasaremos a buscar tus prendas que quieras que circulen por lo mas alto con "Ateneo"</p>
             <form action="./circulaconnosotros.html" class="form">
                 <h6>Ingrese nombre y apellido</h6>
                 <input type="text" placeholder="Juan Perez" name="Ingrese nombre y apellido">
@@ -58,13 +60,15 @@
                 <h6></h6>
                 <input type="submit">
             </form>
-            <p class="parrafo-form">¡Muchas gracias por tu colaboracion!</p>
+            <p class="form">¡Muchas gracias por tu colaboracion!</p>
         </section>
-        <section id="ubicacion-ateneo" class="mapa section-circulaconnos">
+        <section id="ubicacion-ateneo" class="section-circulaconnos section-mapa">
             <p>
                 Tambien, podes acercarnos tu ropa que ya no usas a nuestro local ubicado en Acropolis, Dionysiou Areopagitou, Athina 105 58, Grecia
             </p>
-            <iframe class="mapa-ateneo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10579.516933767816!2d23.714288257837012!3d37.969912793828094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1837f5acf3%3A0x5c97c042f5eb0df6!2sAcr%C3%B3polis%20de%20Atenas!5e0!3m2!1ses!2sar!4v1715273076592!5m2!1ses!2sar" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="div-mapa-ateneo"></div>
+                <iframe class="mapa-ateneo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10579.516933767816!2d23.714288257837012!3d37.969912793828094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1837f5acf3%3A0x5c97c042f5eb0df6!2sAcr%C3%B3polis%20de%20Atenas!5e0!3m2!1ses!2sar!4v1715273076592!5m2!1ses!2sar" width="100%" height="75%" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            </div>    
         </section>
     </main>
     <footer>
@@ -75,6 +79,7 @@
             <li><a href="https://es.wallapop.com/app/user/yub-43427310-p8j342029869/published" target="_blank">Wallapop</a></li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

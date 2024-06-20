@@ -3,6 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes animation-opacity {
+    0%  {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.texto-centrado {
+    text-align: center;
+    justify-content: center;
+}
+a {
+    color: rgb(2, 0, 40);
+    &:hover {
+        color: violet;
+    }
+}
 header {
     background-color: rgba(99, 194, 200, 0.25);
     width: 100%;
@@ -30,6 +57,13 @@ body {
     background-image: url(../images/fondo-ateneo.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    main {
+        padding: 1%;
+        background-color: rgba(99, 194, 200, 0.25);
+        animation-name: animation-opacity;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
 }
 footer {
     margin-top: 1%;
@@ -46,12 +80,26 @@ footer {
         }
     }
 }
-a {
-    color: rgb(2, 0, 40);
-    &:hover {
-        color: violet;
+@media only screen and (max-width: 480px) {
+    header {
+        padding-bottom: 5%;
+        background-color: rgba(12, 155, 232, 0.167);
+        border-radius: 3%;
+        grid-template-columns: 100%;
+        .logo {
+            display: none;
+        }
+        .nombre-header {
+            display: none;
+        }
     }
 }
-main {
-    background-color: rgba(99, 194, 200, 0.25);
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr 7fr;
+        background-size: contain;
+        .nombre-header {
+            display: none;
+        }
+    }
 }
